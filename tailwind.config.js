@@ -2,6 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}",
             "./home.html"],
+  content: {
+    relative: true,
+    transform: (content) => content.replace(/taos:/g, ''),
+    files: ['./src/*.{html,js}'],
+  },
   theme: {
     extend: {},
   },
