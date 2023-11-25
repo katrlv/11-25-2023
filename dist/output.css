@@ -434,6 +434,10 @@ video {
   display: none;
 }
 
+html.js :where([class*="taos:"]:not(.taos-init)) {
+  visibility: hidden;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -534,20 +538,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+.\!delay-\[0ms\] {
+  transition-delay: 0ms !important;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.underline {
-  text-decoration-line: underline;
+.\!duration-\[0ms\] {
+  transition-duration: 0ms !important;
 }
